@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "tsc && node dist/index.js",
+    "dev": "tsc && node dist/index.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +18,8 @@
     "socket.io": "^4.7.2"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "@types/node": "^20.8.4",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.2.2"
   }
 }
